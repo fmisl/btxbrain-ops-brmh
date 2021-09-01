@@ -1,0 +1,522 @@
+body {
+    margin: 0;
+}
+
+.Main-modal {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.Main-modal>progress {
+    /*background-color: #f3f3f3;*/
+    border-radius: 10px;
+    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;*/
+    width: 300px;
+    height: 40px;
+    /*font-size: 6rem;*/
+}
+
+.Main {
+    /* position: fixed; */
+    /*background-color: rgb(17, 17, 25);*/
+    /* top: 0;
+    left: 0; */
+    /* height: 80vh;
+    width: 80vw; */
+    box-sizing: border-box;
+    /*border: red solid;*/
+    background: black;
+    position: absolute;
+    /* top: 170px;
+    left: 300px; */
+    width: 1550px;
+    height: 850px;
+
+    background-color: rgb(17, 17, 25);
+    /*background-color: rgba(17, 17, 25, 0);*/
+    /*background-color: white;*/
+    /*background-color: red;*/
+    /*height: 150vh;*/
+    /* border: red solid; */
+}
+
+.Main.act {
+    cursor: wait;
+}
+
+.Main-header,
+.Main-footer {
+    box-sizing: border-box;
+    /*border: red solid;*/
+    padding-left: 20px;
+    padding-right: 20px;
+    position: fixed;
+    left: 0;
+    height: 50px;
+    width: 100vw;
+    background-color: #232F40;
+    font-size: medium;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Main-header {
+    top: 0;
+    z-index: 2;
+    /* border: green solid; */
+    box-sizing: border-box;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+
+.Main-header>a {
+    box-sizing: border-box;
+    /*border: white solid;*/
+    height: 40px;
+}
+
+.Main-header-userinfo {
+    box-sizing: border-box;
+    /* border: red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 35px;
+    white-space: nowrap;
+}
+
+.Main-header-userinfo>img {
+    box-sizing: border-box;
+    height: 25px;
+    margin-left: 30px;
+}
+
+.Main-header-userinfo>img:hover {
+    border: 1px solid #1BA1BF;
+}
+
+.Main-footer {
+    bottom: 0;
+    z-index: 0;
+}
+
+
+
+.Main-sidebar {
+    position: fixed;
+    right: 0;
+    z-index: 1;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    box-sizing: border-box;
+    /* border: red solid; */
+    background-color: #232F40;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px 20px;
+    font-size: medium;
+    color: white;
+
+    /* opacity: 0; */
+    /* display:none; */
+}
+
+.Main-sidebar-group1,
+.Main-sidebar-group2 {
+    box-sizing: border-box;
+    /*border: green solid;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.Main-sidebar-set1,
+.Main-sidebar-set2 {
+    box-sizing: border-box;
+    /*border: red solid;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Main-sidebar-set1 .radio1 {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: red solid;*/
+    width: 50%;
+    height: 45px;
+    background-color: rgb(17, 17, 25);
+}
+
+.Main-sidebar-set1 .radio1.act {
+    background-color: #1BA1BF;
+}
+
+.Main-sidebar-set1 .radio1:active {
+    background-color: #1BA1BF;
+}
+
+.Main-sidebar-set1 .radio1:hover {
+    border: 1px #1BA1BF solid;
+}
+
+.Main-sidebar-set1 .radio1.act:hover {
+    border: 1px white solid;
+}
+
+.Main-sidebar-set2 .switch1 {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    width: 55px;
+    height: 45px;
+    background-color: rgb(17, 17, 25);
+}
+
+.Main-sidebar-set2 .switch1.act {
+    background-color: #1ba1bf;
+}
+
+.Main-sidebar-set2 .switch1.act:hover {
+    background-color: #1ba1bf;
+    border: 1px white solid;
+}
+
+.Main-sidebar-set2 .switch1:active {
+    background-color: #1BA1BF;
+}
+
+.Main-sidebar-set2 .switch1:hover {
+    border: 1px #1BA1BF solid;
+}
+
+.Main-sidebar-set2 .bar1 {
+    box-sizing: border-box;
+    /* border: red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 80%;
+    height: 45px;
+}
+
+.Main-sidebar-set2 .bar1:hover {
+    border: 1px #1BA1BF solid;
+}
+
+.Main-sidebar-label {
+    box-sizing: border-box;
+    /*border: red solid;*/
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+}
+
+.Main-sidebar-group2 .button1 {
+    box-sizing: border-box;
+    /*border: red solid;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 45px;
+    margin-top: 10px;
+    background-color: rgb(17, 17, 25);
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.Main-sidebar-group2 .button1.act {
+    background-color: #1BA1BF;
+}
+
+.Main-sidebar-group2 .button1:hover {
+    border: 1px #1BA1BF solid;
+    /*cursor: crosshair;*/
+}
+
+.Main-sidebar-group2 .button1.act:hover {
+    border: 1px white solid;
+    /*cursor: crosshair;*/
+}
+
+.Main-sidebar-group2 .button1 .upload-btn {
+    position: absolute;
+    box-sizing: border-box;
+    /* border: red solid; */
+    height: 45px;
+    vertical-align: middle;
+    text-align: center;
+    opacity: 0;
+}
+
+.Main-viewport {
+    z-index: 5;
+    position: absolute;
+    /*top: 50px;*/
+    /*left: 0;*/
+    /*width: calc(100vw - 300px);*/
+    /*height:calc(100vh - 100px);*/
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /* border: white solid; */
+    background-color: rgb(17, 17, 25);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    color: white;
+    overflow: hidden;
+}
+
+.Main-viewport:hover {
+    border: 1px #1BA1BF solid;
+    /*cursor: wait;*/
+}
+
+.Main-viewport-input {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.Main-viewport-input.act {
+    cursor: wait;
+}
+
+.Main-viewport>img {
+    /*border: red solid;*/
+    background-color: transparent;
+    /*margin: 0px;*/
+    height: 130px;
+}
+
+.CornerstoneElement-Wrapper {
+    /* position: absolute;
+    top: 0px;
+    left: 0; */
+    box-sizing: border-box;
+    /*background-color: red;*/
+    /* border: red solid; */
+    min-width: 512px;
+    min-height: 512px;
+    /* width: calc(100vw - 300px); */
+    /* width: 100vw; */
+    /* height: calc(100vh - 100px); */
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    visibility: hidden;
+    cursor: crosshair;
+    z-index: 5;
+}
+
+.CornerstoneElement-Wrapper.act {
+    display: flex;
+    visibility: visible;
+}
+
+.CornerstoneElement-Wrapper.act.pan {
+    cursor: grab;
+}
+
+.CornerstoneElement-Wrapper.act.pan.mag {
+    cursor: zoom-in;
+}
+
+
+.Main-header-tools {
+    /* border:red solid; */
+    display: flex;
+    justify-content: center;
+    /* flex-direction: row; */
+    box-sizing: border-box;
+    width: 65%;
+}
+
+.Main-header-tools .switch1 {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 45px;
+    height: 35px;
+    background-color: rgb(17, 17, 25);
+}
+
+.Main-header-tools .switch1.act {
+    background-color: #1ba1bf;
+}
+
+.Main-header-tools .switch1.act:hover {
+    background-color: #1ba1bf;
+    border: 1px white solid;
+}
+
+.Main-header-tools .switch1:active {
+    background-color: #1BA1BF;
+}
+
+.Main-header-tools .switch1:hover {
+    border: 1px #1BA1BF solid;
+}
+
+.Main-header-tools .bar1 {
+    box-sizing: border-box;
+    /* border: red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    /* margin-right: 10px; */
+    /* width: 80%; */
+    /* height: 45px; */
+}
+
+.Main-header-tools .bar1:hover {
+    border: 1px #1BA1BF solid;
+}
+
+.Main-header-tools .radio1 {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 45px;
+    height: 35px;
+    background-color: rgb(17, 17, 25);
+}
+
+.Main-header-tools .radio1.act {
+    background-color: #1BA1BF;
+}
+
+.Main-header-tools .radio1:active {
+    background-color: #1BA1BF;
+}
+
+.Main-header-tools .radio1:hover {
+    border: 1px #1BA1BF solid;
+}
+
+.Main-header-tools .radio1.act:hover {
+    border: 1px white solid;
+}
+
+.Main-header-tools2 {
+    /* border: red solid; */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-direction: row; */
+    box-sizing: border-box;
+    width: 30%;
+}
+
+.Main-header-tools2 .Main-sidebar-label2 {
+    box-sizing: border-box;
+    /* border: red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: space-between; */
+    /* width: 100%; */
+    margin-left: 10px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1600px) {
+    .Main-header-tools .bar1>span {
+        display: none;
+    }
+
+    .Main-header-tools2 .Main-sidebar-label2 {
+        display: none;
+    }
+}
+
+.Main-header-tools2 .button1 {
+    box-sizing: border-box;
+    /* border: red solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 35px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: rgb(17, 17, 25);
+    color: white;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.Main-header-tools2 .button1:hover {
+    border: 1px #1BA1BF solid;
+    /*cursor: crosshair;*/
+}
+
+.Main-header-tools2 .button1.act {
+    background-color: #1BA1BF;
+}
+
+.Main-header-tools2 .button1.act:hover {
+    border: 1px white solid;
+    /*cursor: crosshair;*/
+}
+
+.Main-header-tools2 .button1 .upload-btn {
+    position: absolute;
+    box-sizing: border-box;
+    /* border: red solid; */
+    height: 45px;
+    width: 35px;
+    vertical-align: middle;
+    text-align: center;
+    opacity: 0;
+    /* z-index:100; */
+}

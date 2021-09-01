@@ -1,0 +1,66 @@
+.Cornerstone-Wrapper {
+    /* border: red solid; */
+    position: absolute;
+    /*top: 50px;*/
+    /*left: 0;*/
+    box-sizing: border-box;
+    /*background-color: black;*/
+    min-width: 512px;
+    min-height: 512px;
+    /*width: calc(100vw - 300px);*/
+    /*height:calc(100vh - 100px);*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Cornerstone-Wrapper.act {
+    display: none;
+}
+
+
+.divStyle, .CStyle, .SStyle, .emptyStyle {
+    box-sizing: border-box;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    color: white;
+}
+.cornerstone-canvas{
+    /*border: green solid;*/
+    box-sizing: border-box;
+    width: 100%;
+    height:100%;
+}
+.cornerstone-canvas:hover {
+    box-sizing: border-box;
+    border: 1px #1ba1bf solid;
+}
+.topLeftStyle {
+    box-sizing: border-box;
+    top: 15px;
+    left: 10px;
+    position: absolute;
+    color: white;
+}
+.topLeftStyle > div {
+    overflow: hidden;
+    box-sizing: border-box;
+    /*border: red solid;*/
+}
+
+.bottomLeftStyle {
+    bottom: 40px;
+    left: 5px;
+    position: absolute;
+    color: white;
+}
+
+.bottomRightStyle {
+    bottom: 20px;
+    left: 5px;
+    position: absolute;
+    color: white;
+}

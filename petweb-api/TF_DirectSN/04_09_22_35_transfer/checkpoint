@@ -1,0 +1,6 @@
+model_checkpoint_path: "C:\\Users\\dwnusa\\workspace\\04_09_22_35_transfer\\model-25000"
+all_model_checkpoint_paths: "C:\\Users\\dwnusa\\workspace\\04_09_22_35_transfer\\model-5000"
+all_model_checkpoint_paths: "C:\\Users\\dwnusa\\workspace\\04_09_22_35_transfer\\model-10000"
+all_model_checkpoint_paths: "C:\\Users\\dwnusa\\workspace\\04_09_22_35_transfer\\model-15000"
+all_model_checkpoint_paths: "C:\\Users\\dwnusa\\workspace\\04_09_22_35_transfer\\model-20000"
+all_model_checkpoint_paths: "C:\\Users\\dwnusa\\workspace\\04_09_22_35_transfer\\model-25000"

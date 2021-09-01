@@ -1,0 +1,33 @@
+.AnalysisItem3-Default{
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    /* identical to box height, or 178% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.AnalysisItem3-Surface{
+    height:45%;
+    width:80%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.AnalysisItem3-Threshold{
+    height:100%;
+    width:80%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* border: red solid; */
+}
